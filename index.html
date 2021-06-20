@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Learn Coding For Kids">
+  <meta name="description" content="Learn python, c++ For Kids">
+  <meta name="description" content="Finance classes For Kids, digital marketing , Skill Clan">
+  <meta name="author" content="Skill Clan">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>Online Skill Classes for kids | Make your kid Skillfull  </title>
+ 
+</Title>  
+<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Light_bulb_(yellow)_icon.svg/1200px-Light_bulb_(yellow)_icon.svg.png" type="image/x-icon">  
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+</style>
+
+  <style>
+    @media only screen and (max-width: 750px) {
+      .fixedButton{
+            position: fixed;
+            bottom: 0px;
+            padding: 20px;
+            width: 750px;
+        }
+        
+}
+  
+
+    * {
+      color: rgb(3, 3, 3);
+      text-decoration: black;
+    }
+
+    .logomain {
+
+      
+      padding-bottom: 0px;
+      margin: 4px;
+      margin-left: 29px;
+      margin-top: -22px;
+      padding-right: auto;
+      filter: invert(0);
+      height: 144px;
+      width: auto;
+    }
+
+    .logomain:hover {
+
+    padding-bottom: 0px;
+    margin: 4px;
+    margin-left: 29px;
+    margin-top: -22px;
+    padding-right: auto;
+    filter: invert(0);
+    height: 150px;
+    width: auto;
+
+
+    }
+  </style>
+
+  <script>
+
+    var TxtType = function (el, toRotate, period) {
+
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 1500;
+      this.txt = ' ';
+      this.tick();
+      this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function () {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+      var that = this;
+      var delta = 200 - Math.random() * 100;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+
+      setTimeout(function () {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function () {
+      var elements = document.getElementsByClassName('typewrite');
+      for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".typewrite > .wrap { border-right: 0.09em solid #fff}";
+      document.body.appendChild(css);
+    };
+  </script>
+  -->
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <div id="logo">
+              <a href="index.html" class="logo">
+                <img src="testlogo.png" alt="SkillClan" class="logomain"></a>
+            </div>
+            
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#about">About Us</a></li>
+              <li class="scroll-to-section"><a href="#services">Our Courses </a></li>
+              <li class="scroll-to-section"><a href="#blog">Blog</a></li>
+              <li class="scroll-to-section"><a href="ide.html">Online IDE</a></li>
+              <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
+              <li class="scroll-to-section">
+                <div class="main-red-button">
+                  
+                  <a href="contact.html">Book A Free Trial</a></div>
+              </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** chat bot ***** -->
+  <script>!function(e,t,a){var c=e.head||e.getElementsByTagName("head")[0],n=e.createElement("script");n.async=!0,n.defer=!0, n.type="text/javascript",n.src=t+"/static/js/chat_widget.js?config="+JSON.stringify(a),c.appendChild(n)}(document,"https://app.engati.com",{bot_key:"41cf9bd8e0804712",welcome_msg:true,branding_key:"default",server:"https://app.engati.com",e:"p" });</script>
+     
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <h1>
+                  <a href="" class="typewrite" data-period="1000"
+                    data-type='[ "Hi, We are Skill Clan.", "I Want to become a Programmer.",  "I want to Learn Finance","I Want to become an Entrepreneur." ]'>
+                    <br>
+                    <span class="wrap"></span>
+                  </a>
+                </h1>
+                <hr>
+                <h6 style="font-size: 25px;;">Online Skill Classes For Kids</h6>
+                <h2><em>Skill</em><span>Clan</span></h2>
+                <p>Skill Clan is a <strong>skill-based learning academy</strong> . We provide Classes to students. Our focus is to give a <strong>genuine learning experience</strong> to our youngsters.
+                 <br>Our Vision is to make India the  <strong>next superpower</strong> and for that our youths must be competent</p>
+              </div>
+             
+               
+               <br>
+            </div>
+            
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="banner-right-image.jpeg" alt="team meeting">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" >
+<a class="fixedButton" href="contact.html">
+<div class="button7"><i class="fa fa-calendar" style="color: aliceblue;"></i>  Book A Free Trial Class</div>
+</a></div>
+   
+  <div id="services" class="our-services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="left-image">
+            <img src="assets/images/services-left-image.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="section-heading">
+            <h2><em>Courses We <span>Offer</span></em></h2>
+            <p> We provide a variety of skill classes for our students. Our foremost priority is to give a genuine teaching experience. There's a high demand for skillful people, whether it's Coding, Robotics, Digital Marketing, Entrepreneurship, or Trading. We want India to be the next superpower so for that our youths should be competent.
+              <br>  We have well-planned courses from Beginner Level to the Advance Level. </p>
+             
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="first-bar progress-skill-bar">
+                <h4 style="color: rgb(5, 86, 133); text-align: left;">Coding With Python</h4>
+                <span style="font-size:smaller; color: rgb(45, 231, 45); ">Live</span>
+                <div class="filled-bar"></div>
+                <div class="full-bar"></div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="second-bar progress-skill-bar">
+                <div class="first-bar progress-skill-bar">
+                  <h4 style="text-align: left;">Web Development</h4>
+                <span style="font-size:small">Coming Soon</span>
+                <div class="filled-bar"></div>
+                <div class="full-bar"></div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="first-bar progress-skill-bar">
+                <h4>Robotics</h4>
+                <span style="font-size:small">Coming Soon</span>
+                <div class="filled-bar"></div>
+                <div class="full-bar"></div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="first-bar progress-skill-bar">
+                <h4>Finance</h4>
+                <span style="font-size:small">Coming Soon</span>
+                <div class="filled-bar"></div>
+                <div class="full-bar"></div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="first-bar progress-skill-bar">
+                <h4>Digital Marketing</h4>
+                <span style="font-size:small">Coming Soon</span>
+                <div class="filled-bar"></div>
+                <div class="full-bar"></div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="first-bar progress-skill-bar">
+                <h4>Entrepreneurship</h4>
+                <span style="font-size:small">Coming Soon</span>
+                <div class="filled-bar"></div>
+                <div class="full-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <center><a class="nav-link" href="courseoverview.html"><button type="button" class="btn btn-outline-danger" 
+            style="height:50px;width:200px ">Courses Overview</button></a></center>
+    </div>
+  </div>
+
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <img src="assets/images/about-left-image.png" alt="person graphic">
+          </div>
+        </div>
+        <div class="col-lg-8 align-self-center">
+          <div class="services">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-01.png" alt="reporting">
+                  </div>
+                  <div class="right-text">
+                    <h4>Kids friendly </h4>
+                    <p>Our planned course is students friendly. We will provide mentorship and personal attention to
+                      every student</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-02.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>Assignment and Test</h4>
+                    <p> Regular assignments and homework questions
+                      will be provided for deep learning of concepts. Pairwise counseling will be provided and overall
+                      performance will be monitored</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-03.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>Perks and Certificates</h4>
+                    <p>Free Goodies, Swags, and Certificates will be given to the students on course completion to
+                      encourage them for Learning </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.1s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-04.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>Genuine Learning</h4>
+                    <p>We are strictly against Block-based coding and want that our kids must learn the real coding- unlike the other platforms, we will teach only on Real IDE's and Google Virtual labs.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="portfolio" class="our-portfolio section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.1s">
+            <h2>The Team <em>That Makes</em> It <span>Possible</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-sm-6" style=" box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+          <!-- <a href=""> profile blocked  -->
+            <div class="item wow bounceInUp" data-wow-duration="0.7s" data-wow-delay="0.3s">
+              <div class="hidden-content">
+                <h4>Utkarsh Gupta</h4>
+                <p> Co-Founder SKILLCLAN <br> B.tech ECE and  Python Enthusiast, Winner of E-yantra by IIT Bombay (Robotics), Robotics, WebDev, Git, DSA Expert, Cloud Computing <br></p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/portfolio-image.jpg" alt="Utkarsh Gupta"><br>
+                <span>Utkarsh Gupta</span>
+              </div>
+            </div>
+          <!-- </a> -->
+        </div>
+        <div class="col-lg-4 col-sm-6" style=" box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+          <!-- <a href="#"> -->
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div class="hidden-content">
+                <h4>Saksham Garg</h4>
+                <p>Co-founder Skill Clan.<br>BTech in Information Technolgy. experience in DS Algo C++ for 4+ years  ,Working with Python and Python GUI.</p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/portfolio-image.jpg" alt="Saksham Garg">
+                <br><span>Saksham Garg</span>
+              </div>
+            </div>
+          <!-- </a> -->
+        </div>
+        <div class="col-lg-4 col-sm-6" style=" box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+          <!-- <a href="#"> -->
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="hidden-content">
+                <h4>Akash Sharma</h4>
+                <p>Co-founder Skill Clan. <br> Blockchain Devloper ,Major interests in Finance and Entrepreneurship.</p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/portfolio-image.jpg" alt="Akash Sharma">
+                <br><span>Akash Sharma</span>
+              </div>
+            </div>
+          <!-- </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="blog" class="our-blog section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
+          <div class="section-heading">
+            <h2>Check Out <em>Our Latest</em> Updates <span>What's New!</span></h2>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
+          <div class="top-dec">
+            <img src="https://skillclan.in/testlogo.png" alt="">
+          </div>
+        </div>
+      </div>
+      
+      <div class="row" >
+        <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+          <div class="left-image" >
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vJQpiC-hPws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="info"  >
+              <div class="inner-content" >
+                <ul>
+                  <li><i class="fa fa-calendar"></i> 06 June 2021</li>
+                  <li><i class="fa fa-users"></i> Skill Clan</li>
+                  <li><i class="fa fa-folder"></i> #No_Drag&Drop</li>
+                </ul>
+                <a href="blog.html">
+                  <h4>Our Vision &amp; Aim</h4>
+                </a>
+                <p>Real Learning and No Block Coding, We are always transparent</p>
+               <!-- 
+                 <div class="main-blue-button">
+                  <a href="blog.html">Discover More</a>
+                </div> 
+                -->
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+            
+                <center>  <div class="main-blue-button">
+                    <a href="blog.html">Discover More</a>
+                  </div></center>
+          </div>
+                <!--
+                <div class="left-content align-self-center">
+                  <span><i class="fa fa-user"></i> 09 June 2021</span>
+                  <a href="blog.html">
+                    <h4>Personality development</h4>
+                  </a>
+                  <p>Personality development is equally important with skills in order to be industry ready.</p>
+                </div>
+                <div class="right-image">
+                  <a href="blog.html"><img src="assets/images/blog-thumb-01.jpg" alt=""></a>
+                </div>
+              </li>
+              <li>
+                <div class="left-content align-self-center">
+                  <span><i class="fa fa-twitter"></i>#SayNoToDrag&Drop</span>
+                  <a href="blog.html"></a>
+                    <h4>#Say No to Drag &amp; Drop Culture </h4>
+                  </a>
+                  <p>We and our team is highly againsta that so call drag and drop culture and want our students to learn Coding on real IDE so that they can develop &amp; feel real programming and gain skills in that line and be industry Ready.</p>
+                </div>
+                <div class="right-image">
+                  <a href="blog.html"><img src="assets/images/blog-thumb-01.jpg" alt=""></a>
+                </div>
+              </li>
+            </ul>
+          </div>-->
+        </div> 
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <div class="section-heading">
+            <h2>To Book A FREE Trial Class</h2>
+            <p>Tap the button below to whatsapp us or to call us</p>
+            <div class="phone-info">
+              <h4>For any enquiry, Whatsapp / Call Us: <span>
+                 <a href="https://wa.me/918448722094"><i class="fa fa-whatsapp" aria-hidden="true"></i> +91 84487 22094</a></span></h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <div class="inbound-form-wrapper" id="form_5310" data-path="https://app.99inbound.com/i/b75fd4f7-2c5c-4f1c-8091-0b0d428e1950" data-token="8Tg2d0f1OjrpjMs8hm8IJwtt">
+            <div style="position: absolute; left: -5000px;">
+              <input type="checkbox" name="excellent_sunshine_polka_dotted_iguana" value="1" tabindex="-1" autocomplete="no">
+            </div>
+          </div>
+
+<!-- Only include this once in your webpage -->
+<script type="text/javascript" src="https://app.99inbound.com/99inbound.js"></script>
+         <!-- <form id="contact" action="https://app.99inbound.com/f/b75fd4f7-2c5c-4f1c-8091-0b0d428e1950" method="POST" data-netlify="true" style=" box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
+         -- <div class="row">
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email"
+                    required="">
+                </fieldset>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="tel" name="phone" id="phone-info" pattern=digits placeholder="Contact Number (10 Digit Only)"
+                      required="">
+                  </fieldset>
+                 
+                  <div class="col-lg-12">
+                  <fieldset>
+                      <label  >Preferred Course</label>
+                      <select type="tel" id="phone-info" placeholder="cars"
+                      required="" style="   display: inline-block;
+                      background-color: #bce2f3;
+                      font-size: 15px;
+                      text-align: center;
+                      font-weight: 400;
+                      color: rgb(14, 14, 14);
+                      text-transform: capitalize;
+                      padding: 12px 25px;
+                      border-radius: 23px;
+                      letter-spacing: 0.25px;
+                      border: none;
+                      outline: none;
+                      transition: all .3s;" >
+                        <option value="">Choose Batch </option>
+                        <option value="">PyClan Batch - Python</option>
+                      </select>
+                    </fieldset>
+                    <br>
+
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <textarea name="message" type="text" class="form-control" id="message" placeholder="Any other queries?"
+                    ></textarea>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="main-button ">Send Message</button>
+                </fieldset>
+              </div>
+            </div>
+            <div class="contact-dec">
+              <img src="assets/images/contact-decoration.png" alt="">
+            </div>
+          </form> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer> <br><br> <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+          <p style="display: inline;" > <hr> &copy;Copyright 2021 Skill-Clan Academy All Rights Reserved.
+          </p>
+          <div id="social-handles"><span style="margin: 8px;font-size: large;">Visit Us: </span>
+            <h4> <span> <a href="https://linkedin.com/company/skillclan" target="_blank">
+              <i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:xx-large;">&nbsp;&nbsp;</i></a></span>
+
+              <a href="https://www.instagram.com/skillclan_/" target="_blank">
+                <i class="fa fa-instagram " aria-hidden="true" style="font-size:xx-large;">  &nbsp;&nbsp;</i></a>
+
+
+                <a href="https://www.facebook.com/pg/Skill-Clan-102175032089073/" target="_blank">
+                  <i class="fa fa-facebook" aria-hidden="true" style="font-size:xx-large;">&nbsp;&nbsp;</i></a>
+            </h4><br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/templatemo-custom.js"></script>
+
+</body>
+
+</html>
