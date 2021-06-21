@@ -1039,6 +1039,10 @@ header
   .header-area .main-nav .nav {
     display: flex !important;
   }
+  img#optionalstuff {
+    display: none;
+  }
+
 }
 
 /* 
